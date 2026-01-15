@@ -64,12 +64,12 @@ public static class Program
         });
 
         Console.WriteLine();
-        Console.WriteLine($"Iterations: {n}");
-        Console.WriteLine($"CSV serialize (cached reflection): {tCsvSer.TotalMilliseconds:F3} ms");
-        Console.WriteLine($"JSON serialize (System.Text.Json): {tJsonSer.TotalMilliseconds:F3} ms");
-        Console.WriteLine($"CSV deserialize: {tCsvDes.TotalMilliseconds:F3} ms");
-        Console.WriteLine($"JSON deserialize: {tJsonDes.TotalMilliseconds:F3} ms");
-        Console.WriteLine($"Console.WriteLine x{w}: {tWriteLine.TotalMilliseconds:F3} ms");
+        Console.WriteLine($"Количество итераций: {n}");
+        Console.WriteLine($"CSV сериализация (кэшированная рефлексия): {tCsvSer.TotalMilliseconds:F3} мс");
+        Console.WriteLine($"JSON сериализация (System.Text.Json): {tJsonSer.TotalMilliseconds:F3} мс");
+        Console.WriteLine($"CSV десериализация: {tCsvDes.TotalMilliseconds:F3} мс");
+        Console.WriteLine($"JSON десериализация: {tJsonDes.TotalMilliseconds:F3} мс");
+        Console.WriteLine($"Console.WriteLine x{w}: {tWriteLine.TotalMilliseconds:F3} мс");
     }
 
     private static void Warmup(F f, string csv, FPublic dto, string json)
