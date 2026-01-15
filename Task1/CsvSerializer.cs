@@ -107,4 +107,4 @@ public static class CsvSerializer
         parts[5] = s.Substring(start);
         return parts;
     }
-}
+} 
